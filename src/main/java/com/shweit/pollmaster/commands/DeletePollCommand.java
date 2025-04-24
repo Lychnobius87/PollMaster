@@ -1,7 +1,5 @@
 package com.shweit.pollmaster.commands;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.shweit.pollmaster.utils.ConnectionManager;
 import com.shweit.pollmaster.utils.LangUtil;
 import org.bukkit.ChatColor;
@@ -21,7 +19,6 @@ public final class DeletePollCommand implements CommandExecutor, TabExecutor {
 
 
     public boolean deletePoll(final Player whoClicked, final int pollId) {
-        Gson gson = new Gson(); // To handle JSON parsing
 
         // Connect to the database
         try (Connection connection = new ConnectionManager().getConnection()) {
