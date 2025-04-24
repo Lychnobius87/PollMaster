@@ -3,6 +3,7 @@ CREATE TABLE IF NOT EXISTS votes (
     poll_id INTEGER NOT NULL,
     answers TEXT NOT NULL,
     uuid TEXT NOT NULL,
+    isOpen BOOLEAN NOT NULL DEFAULT TRUE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (poll_id) REFERENCES polls (id)
 );
