@@ -44,7 +44,8 @@ public final class PollDetailGuiListener implements Listener {
         if (clickedItem == null || !clickedItem.hasItemMeta()) {
             return;
         }
-
+        // TODO 2: Change from Delete to CLose
+        // TODO 3: Make History GUI and make klick to History COMMAND and Right-Click to delete COMMAND
         String displayName = clickedItem.getItemMeta().getDisplayName();
         if (displayName.startsWith(ChatColor.GOLD.toString())) {
             if (event.isRightClick()) {
