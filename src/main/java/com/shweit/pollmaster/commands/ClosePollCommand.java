@@ -23,6 +23,7 @@ import java.util.Map;
 public final class ClosePollCommand implements CommandExecutor, TabExecutor {
 
 //TODO 1: Move the Result to separate Command (Utils or PollDetails)
+//TODO 4: Add permission "pollmaster.admin" and --override flag
 
     public boolean closePoll(final Player whoClicked, final int pollId) {
         Gson gson = new Gson(); // To handle JSON parsing
